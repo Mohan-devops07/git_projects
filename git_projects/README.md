@@ -20,4 +20,4 @@
         * pull : Download changes from remote repo to your local machine, the opposite of push.
 
 
-[GitHub YouTube Link] (https://www.youtube.com/watch?v=tRZGeaHPoaw)
+[GitHub YouTube Link](https://www.youtube.com/watch?v=tRZGeaHPoaw)
