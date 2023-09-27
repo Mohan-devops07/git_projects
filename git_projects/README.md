@@ -1,8 +1,7 @@
 # Git and GitHub.
----------------
 
 ## 01. What is Git?
-        free and open source version control system.
+        Git is open soures and free version control management system. (SCM)
 
 ## 02. What is version control system?
         The managemant of changes to documents, computer programs, large web sits and other collections of infoemaction.
@@ -21,4 +20,4 @@
         * pull : Download changes from remote repo to your local machine, the opposite of push.
 
 
-https://www.youtube.com/watch?v=tRZGeaHPoaw
+[GitHub YouTube Link] (https://www.youtube.com/watch?v=tRZGeaHPoaw)
