@@ -161,7 +161,7 @@ Delete the file from project and stage the removal for commit.
 
 To restore the Delete the file from project and stage.
 
-   git restore "File name"
+    git restore "File name"
 
 Show all commit logs with indication of any paths that moved.
 
