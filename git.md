@@ -51,6 +51,7 @@ Retrieve an entire repository from a hosted location via URL
 
 ## Stage & Snapshot.
 Working with snapshots and the Git staging area.
+
 Show modified files in working directory, staged for your next commit.
 
     git status
@@ -87,6 +88,7 @@ To Jump back to privious commit or any other commit.
     
 ## Branch & Merge.
 Isolating work in branches, changing context, and integrating changes.
+
 List your all branches. a * will appear next to the currently active branch
 
     git branch
@@ -106,9 +108,9 @@ Merge the specified branch’s history into the current one.
     git merge -m "Marge massage" branch_name
     
 - Marge conflit can be resolve by checking the file which is confllicted
-- need to verify the <<<<<<<<<<HEAD and  >>>>>>>>>>>Updated text in the conflict file.
+- need to verify the <<<<<<<<<< "HEAD and"  >>>>>>>>>>>Updated text in the conflict file.
 - <<<<<<<<HEAD refars curent status of the fiel.
-- >>>>>>Update refars current commit.
+- ">>>>>>"Update refars current commit.
 
 To delete the branch.
 
@@ -152,6 +154,7 @@ To modify the git log order.
     
 ## Traking path changes.
 Versioning file removes and path changes.
+
 Delete the file from project and stage the removal for commit.
 
     git rm "File name"
@@ -184,12 +187,11 @@ Change an existing file path and stage the move.
 Retrieving updates from another repository and updating local repos
 
 
+
+
 ## Share & Update.
 Retrieving updates from another repository and updating local repos## Share & Update.
-Retrieving updates from another repository and updating local repos## Share & Update.
 Retrieving updates from another repository and updating local repos
-
-
 
 
 
