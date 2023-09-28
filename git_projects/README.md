@@ -23,6 +23,7 @@
 
 ## Git Setup.
    Configuring user information used across all local repositories.
+
 	git config --global user.name “[firstname lastname.
 	# set a name that is identifiable for credit when review version history.
 	git config --global user.email “[valid-email]”
@@ -32,6 +33,7 @@
 
 ## Git Setup & init.
    Configuring user information, initializing and cloning repositories.
+
     git init
     # initialize an existing directory as a Git repository
     git clone [url]
