@@ -108,7 +108,7 @@ Merge the specified branch’s history into the current one.
 - Marge conflit can be resolve by checking the file which is confllicted
 - need to verify the <<<<<<<<<<HEAD and  >>>>>>>>>>>Updated text in the conflict file.
 - <<<<<<<<HEAD refars curent status of the fiel.
-- >>>>>>> Update refars current commit.
+- >>>>>>Update refars current commit.
 
 To delete the branch.
 
@@ -132,8 +132,7 @@ Show the commits that changed file, even across renames.
     git log --follow "File name"
     
 Show the diff of what is in branchA that is not in branchB.
-
-   git diff branchB...branchA 
+    git diff branchB...branchA 
 
 Show any object in Git in human-readable format.
 
