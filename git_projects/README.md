@@ -23,14 +23,14 @@
 
 ## Git Setup.
    Configuring user information used across all local repositories.
-''bash
+'''shell
    git config --global user.name “[firstname lastname]”
    # set a name that is identifiable for credit when review version history.
    git config --global user.email “[valid-email]”
    # set an email address that will be associated with each history marker.
    git config --global color.ui auto
    # set automatic command line coloring for Git for easy reviewing.
-''
+'''
 ## Git Setup & init.
    Configuring user information, initializing and cloning repositories.
 '''   
@@ -39,3 +39,10 @@
    git clone [url]
    # retrieve an entire repository from a hosted location via URL
 '''
+
+
+    git init
+    # initialize an existing directory as a Git repository
+    git clone [url]
+    # retrieve an entire repository from a hosted location via
+           
