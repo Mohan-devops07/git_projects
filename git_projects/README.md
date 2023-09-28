@@ -43,10 +43,36 @@ Initialize an existing directory as a Git repository
 
     git init
 
-Retrieve an entire repository from a hosted location via
+Retrieve an entire repository from a hosted location via URL
 
     git clone [url]
-           
+
+## Stage & Snapshot.
+Working with snapshots and the Git staging area.
+Show modified files in working directory, staged for your next commit.
+
+    git status
+
+Add a fille as it looks now to your next commit (in Stage).
+    git add "file name"
+    git add -A 'or' git add --all # To add all file.
+
+Unstage a file while retaining the changes in working directory
+
+    git reset "file name"
+    git reset -A or git reset --all
+
+Diffrence of what is changed but not staged.
+
+    git diff
+
+Diffrence of what is staged but not yet commited.
+
+    git diff --staged
+
+Commite your staged content as a new commit snapshot.
+
+    git commit -m "descriptive message"
 
 ## Ignoring Patterns.
 ***.gitignore***
