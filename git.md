@@ -74,6 +74,51 @@ Commite your staged content as a new commit snapshot.
 
     git commit -m "descriptive message"
 
+## Branch & Merge.
+Isolating work in branches, changing context, and integrating changes.
+List your all branches. a * will appear next to the currently active branch
+
+    git branch
+    
+To create a new branch at the current commit.
+
+     git branch [branch-name]
+
+Switch to another branch and check it out into your working directory.
+
+    git checkout
+
+Merge the specified branch’s history into the current one.
+
+    git merge [branch]
+
+## Inspect & Compare.
+Show all commits in the current branch’s history.
+
+    git log
+
+Show the commits on branchA that are not on branchB.
+
+    git log branchB..branchA
+
+Show the commits that changed file, even across renames.
+
+    git log --follow [file]
+    
+Show the diff of what is in branchA that is not in branchB.
+   git diff branchB...branchA 
+
+Show any object in Git in human-readable format.
+
+    git show [SHA]
+
+## Traking path changes.
+Versioning file removes and path changes.
+Delete the file from project and stage the removal for commit.
+
+    git rm [file]
+
+
 ## Ignoring Patterns.
 ***.gitignore***
 
