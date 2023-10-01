@@ -55,11 +55,11 @@ $1 - value1
 $2 - value2
 - We can use $0-9
 
-$# - is used to count the number of variables. 
-$@ - is used to display the passed variables.
-$? - Returns the exit status of the last command. 
-$$ - Returns the process id of the script.
-shift - Number of arguments are reduced each time as the shift command executen.
+- "$#" > is used to count the number of variables. 
+- "$@"  > is used to display the passed variables.
+- "$?" > Returns the exit status of the last command. 
+- "$$" > Returns the process id of the script.
+- "shift" > Number of arguments are reduced each time as the shift command executen.
 
 
 #### Troubleshooting shell script.
