@@ -66,3 +66,14 @@ shift - Number of arguments are reduced each time as the shift command executen.
 'set -vx' - is used to debug the script.
 v - Verbose.
 x -
+#### Basic Operators.
+- Arithmatic Operators.
+- Relational Operators.
+- Boolean Operators.
+- String Operators.
+- File Test Operators.
+
+**Arithmatic Operators.**
+- Shell uses external program 'expr' to operations.
+- EX: Syntax - 'expr value1 <operator> value2'
+
