@@ -1,5 +1,7 @@
 # Git and GitHub.
 
+#Git
+----
 ## 01. What is Git?
    Git is open soures and free version control management. (SCM)
 
@@ -49,6 +51,7 @@ Retrieve an entire repository from a hosted location via URL
 
 ## Stage & Snapshot.
 Working with snapshots and the Git staging area.
+
 Show modified files in working directory, staged for your next commit.
 
     git status
@@ -74,6 +77,100 @@ Commite your staged content as a new commit snapshot.
 
     git commit -m "descriptive message"
 
+To Amend the commt massage.
+
+    git commit -m "amendment message"  --amend
+
+To Jump back to privious commit or any other commit.
+
+    git reset "hash tag"
+    # hash tag is from 'git log --oneline'
+    
+## Branch & Merge.
+Isolating work in branches, changing context, and integrating changes.
+
+List your all branches. a * will appear next to the currently active branch
+
+    git branch
+    
+To create a new branch at the current commit.
+
+     git branch [branch-name]
+     #or
+     git switch -c branch_name
+
+To Switch to another branch.
+
+     git switch "branch name"
+    
+Merge the specified branch’s history into the current one.
+
+    git merge -m "Marge massage" branch_name
+    
+- Marge conflit can be resolve by checking the file which is confllicted
+- need to verify the <<<<<<<<<< "HEAD and"  >>>>>>>>>>>Updated text in the conflict file.
+- <<<<<<<<HEAD refars curent status of the fiel.
+- ">>>>>>"Update refars current commit.
+
+To delete the branch.
+
+    git branch -d branch_name
+
+Switch to another branch and check it out into your working directory.
+
+    git checkout
+
+## Inspect & Compare.
+Show all commits in the current branch’s history.
+
+    git log
+
+Show the commits on branchA that are not on branchB.
+
+    git log branchB..branchA
+
+Show the commits that changed file, even across renames.
+
+    git log --follow "File name"
+    
+Show the diff of what is in branchA that is not in branchB.
+    git diff branchB...branchA 
+
+Show any object in Git in human-readable format.
+
+    git show [SHA]
+    
+To See one line log.
+
+    git log --oneline
+
+To See the changes using log.
+
+    git log -p
+
+To modify the git log order.
+
+    git rebase -i --root
+    
+## Traking path changes.
+Versioning file removes and path changes.
+
+Delete the file from project and stage the removal for commit.
+
+    git rm "File name"
+
+To restore the Delete the file from project and stage.
+
+    git restore "File name"
+
+Show all commit logs with indication of any paths that moved.
+
+    git log --stat -M
+
+Change an existing file path and stage the move.
+
+    git mv [existing-path] [new-path]
+
 ## Ignoring Patterns.
 ***.gitignore***
 
@@ -83,4 +180,18 @@ Commite your staged content as a new commit snapshot.
         *.txt
 	or
 	mohan.sh
+
+# GitHub
+---------
+ ## Share & Update.
+Retrieving updates from another repository and updating local repos
+
+
+
+
+## Share & Update.
+Retrieving updates from another repository and updating local repos## Share & Update.
+Retrieving updates from another repository and updating local repos
+
+
 
