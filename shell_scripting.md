@@ -54,7 +54,6 @@ $0 - tesh.sh
 $1 - value1
 $2 - value2
 - We can use $0-9
-
 - "$#" > is used to count the number of variables. 
 - "$@"  > is used to display the passed variables.
 - "$?" > Returns the exit status of the last command. 
@@ -75,5 +74,5 @@ x -
 
 **Arithmatic Operators.**
 - Shell uses external program 'expr' to operations.
-- EX: Syntax - 'expr value1 <operator> value2'
+- EX: Syntax - 'expr value1 "<operator>" value2'
 
