@@ -123,7 +123,7 @@ Syntax
         # code to run if pattern matches;;
     esac
 ```
-Eample:
+Example:
 ```shell
 fruit="banana"
 case "$fruit" in
@@ -188,6 +188,10 @@ fi
 ```
 
 #### Shell Loops
+
+**While Loop**
+- While loop will run if the condition is true.
+- if it is fales it will not run.
 Syntax
 
 ```
@@ -197,4 +201,57 @@ Syntax
    done
 
 ```
+Example:
+```
+#!/bin/bash
+#set -vx
+count=1
 
+while [ $count -le 9 ]
+do
+        echo $count
+        count=`expr $count + 1`
+done
+```
+
+
+** Until**
+- Until loop will run until the  condition becomes true.
+- if it true it will not run
+Syntax
+
+```
+   until [Condition]
+   do
+     statment(s)
+   done
+
+```
+
+Example:
+
+```
+#!/bin/sh
+
+a=13
+
+until [ $a -lt 10 ]
+do
+   echo $a
+   a=`expr $a - 1`
+done
+
+```
+
+#### For loop.
+- Number of iterations depending on a list of value.
+
+Syntax
+
+```
+   for variable in val1 val2 val3
+   do
+     statment(s)
+   done
+
+```
