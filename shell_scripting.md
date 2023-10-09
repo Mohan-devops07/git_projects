@@ -1,6 +1,7 @@
 # SHELL SCRIPTING.
 ------------------
 [YouTube Link](https://www.youtube.com/watch?v=zYh96h7ewMM)
+[UNIX / LINUX Tutorial](https://www.tutorialspoint.com/unix/index.htm)
 
 ## Agenda.
 
@@ -11,6 +12,9 @@
 ### Basic Operators.
 ### Decision Making.
 ### Shell Loop.
+### Functions.
+### Redirection.
+### Capturing Outputs.
 
 **01. What is shell?**
 - **Shell** is a environment in which we run the Linux commands.
@@ -31,19 +35,19 @@ which interpreter(shell) to use when executing the script.
 
 #### Define a Variable.
 
-'variable_name=value
+`variable_name=value`
 
 #### Retrive the value from variable.
 
-'$variable_name'
+`$variable_name`
 
 #### Variable Types.
 
 - Local Variable
 - Envirnment variable
-	- We need to use 'export' command to set envirnment veriable.
+	- We need to use `export` command to set envirnment veriable.
 
-'. ./shell_script.sh' To run the script in same shell.
+`. ./shell_script.sh` To run the script in same shell.
 
 #### Special Variables.
 
@@ -62,9 +66,9 @@ $2 - value2
 
 
 #### Troubleshooting shell script.
-'set -vx' - is used to debug the script.
+`set -vx` - is used to debug the script.
 v - Verbose.
-x -
+x - Excite
 #### Basic Operators.
 - Arithmatic Operators.
 - Relational Operators.
@@ -74,6 +78,122 @@ x -
 
 **Arithmatic Operators.**
 - Shell uses external program 'expr' to operations.
-- EX: Syntax - 'expr value1 "<operator>" value2'
+- EX: Syntax - `expr value1 <operator> value2`
 
-test
+
+#### Decision Making.
+
+
+Syntax
+- if - [Condition]
+``` if [Condition]; then
+	excutie this line
+    fi```
+
+Syntax
+- if & else - [Condition]
+
+``` if [Condition]; then
+        excutie this line
+    else
+	excutie this line
+    fi```
+
+Syntax
+- if elsif & else - [Condition]
+``` if [Condition]; then
+        excutie this line
+    elsif [Condition]; then
+	excutie this line
+    else
+        excutie this line
+    fi```
+
+
+### Swtch Statement
+Syntax
+
+``` case variable in
+    Pattern1)
+	# code to run if pattern matches;;
+    Pattern2)
+        # code to run if pattern matches;; 
+    *)
+        # code to run if pattern matches;;
+    esac
+```
+Eample:
+```shell
+fruit="banana"
+case "$fruit" in
+        "banana")
+                echo "Banana's are Yellow";;
+        "apple")
+                echo "Apple's are Red" ;;
+        "Grapes")
+                echo "Grapes are Green";;
+        *)
+                echo " it's  not a fruit";;
+esac
+```
+
+#### Boolean Operators.
+
+`!`  This is logical negation. This inverts a true condition into false and vice versa.
+`[ ! false ]` is true.
+
+`-o` This is logical OR. If one of the operands is true, then the condition becomes true.
+`[ $a -lt 20 -o $b -gt 100 ]` is true.
+
+`-a` This is logical AND. If both the operands are true, then the condition becomes true otherwise false.
+`[ $a -lt 20 -a $b -gt 100 ]` is false.
+
+
+Example
+```shell
+#!/bin/sh
+
+a=10
+b=20
+
+if [ $a != $b ]
+then
+   echo "$a != $b : a is not equal to b"
+else
+   echo "$a != $b: a is equal to b"
+fi
+
+if [ $a -lt 100 -a $b -gt 15 ]
+then
+   echo "$a -lt 100 -a $b -gt 15 : returns true"
+else
+   echo "$a -lt 100 -a $b -gt 15 : returns false"
+fi
+
+if [ $a -lt 100 -o $b -gt 100 ]
+then
+   echo "$a -lt 100 -o $b -gt 100 : returns true"
+else
+   echo "$a -lt 100 -o $b -gt 100 : returns false"
+fi
+
+if [ $a -lt 5 -o $b -gt 100 ]
+then
+   echo "$a -lt 100 -o $b -gt 100 : returns true"
+else
+   echo "$a -lt 100 -o $b -gt 100 : returns false"
+fi
+
+```
+
+#### Shell Loops
+Syntax
+
+```
+   while [Condition]
+   do
+     statment(s)
+   done
+
+```
+
