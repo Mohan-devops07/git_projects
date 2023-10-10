@@ -255,3 +255,41 @@ Syntax
    done
 
 ```
+
+#### Loop Control
+- `break` Terminates the entire loop.
+- `continue`	 skips a iteration.
+
+
+#### Nested loops.
+
+#### Shell Functions.
+
+Syntax
+```
+function_name(){
+	Statement(s)
+}
+```
+Calling a function.
+
+`function_name <arguments>`
+
+#### Shell rediirections
+**Output redirection:**
+`>` Write the output to a file (also it will over write)..
+`>>` Append the output to a file.
+
+**Discard the output**
+- Scipt output will not print on terminal.
+- it only print errors
+ `script.sh > /dev/null`
+
+`script.sh 2> /dev/null` it not print error.
+
+**No Hang Up**
+`nohup script.sh 2>&1&`
+
+#### Capturing the Output.
+
+
