@@ -14,10 +14,12 @@
 13. Volumes Demo.
 
 ## 1. What is docker?
+- A platform for building, running and shipping application.
 - A way to package application with all the necessary dependencies and configuration.
 - Portable artifact, easily shared and moved around.
 - Makes development and deployment more efficient.
 
 ## 2. What is a Container?
-
-
+- Layers of images.
+- Mostly Linux Based image, because small in size.
+- Application image on top.
