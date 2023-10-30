@@ -18,7 +18,7 @@ The management of changes to documents, computer programs, large web sites and o
 - **push** : Upload Git commits to a remote repo, like GitHub.
 - **pull** : Download changes from remote repo to your local machine, the opposite of push.
 
-[GitHub YouTube Link](https://www.youtube.com/watch?v=tRZGeaHPoaw)
+## [GitHub YouTube Link](https://www.youtube.com/watch?v=tRZGeaHPoaw)
 
 ## Git Setup.
 Configuring user information used across all local repositories.\
@@ -140,18 +140,13 @@ Change an existing file path and stage the move.\
 `git mv [existing-path] [new-path]`
 
 ## Ignoring Patterns.
-
-***.gitignore***
+***.gitignore***\
 .gitignore is file which is used to Preventing unintentional staging or committing of files.
 Example:
 ## To ignore all .txt files
-
 *.txt\
 or\
 mohan.sh
-
 # GitHub
 ### Share & Update.
-Retrieving updates from another repository and updating local repos
-
-
+Retrieving updates from another repository and updating local repos.
